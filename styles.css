@@ -1,0 +1,237 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+h1{
+    color: aqua;
+}
+
+header {
+    background-color: #6c5b7b;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-left h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem; /* Increased header text size */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem; /* Increased space between navigation items */
+}
+
+nav ul li a img {
+    width: 50px; /* Increased icon size */
+    height: 50px; /* Increased icon size */
+    filter: invert(1); /* Makes the icon white */
+}
+
+section {
+    padding: 6rem 2rem;
+    margin-top: 4rem;
+}
+
+#home {
+    text-align: center;
+    background: url('background.jpg') no-repeat center center/cover fixed; /* Fixed background image */
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed; /* Ensure background image is fixed */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+div ul{
+    display: flex;
+    list-style: none;
+    margin-left: -80px;
+}
+div ul li{
+    margin-left: 20px;
+}
+
+.bio {
+    text-align: left;
+    max-width: 30%;
+    color: #ecf0f1;
+}
+
+.bio h1 {
+    font-size: 3rem; /* Increased font size for welcome message */
+    margin-bottom: 1rem;
+}
+
+.bio p {
+    font-size: 1.5rem; /* Increased font size for introductory text */
+    margin-bottom: 1rem;
+}
+
+.profile-animation {
+    position: relative;
+}
+
+.profile-animation .profile-img {
+    border-radius: 25px;
+    width: 250px; /* Increased profile image size */
+    height: 250px; /* Increased profile image size */
+    border: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    color: #6c5b7b;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #6c5b7b;
+}
+
+.btn:hover {
+    background-color: #6c5b7b;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+.social-links a img {
+    width: 50px; /* Increased icon size */
+    height: 50px; /* Increased icon size */
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Scale icon on hover */
+}
+
+#about, #projects, #contact, #technologies,#education {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#technologies h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #6c5b7b;
+}
+
+.tech-grid,.edu_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem; /* Increased gap between technology items */
+    justify-items: center;
+}
+
+.tech-item {
+    text-align: center;
+}
+
+.tech-item img {
+    width: 100px; /* Increased technology icon size */
+    height: 100px; /* Increased technology icon size */
+    margin-bottom: 0.5rem;
+}
+
+.tech-item p {
+    font-size: 1.2rem; /* Increased font size for technology names */
+    color: #333;
+}
+.project_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.project_video{
+    margin-left: 30px;
+    
+}
+footer {
+    background-color: #6c5b7b;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.2rem;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    background-color: #6c5b7b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #563d6b;
+}
+
